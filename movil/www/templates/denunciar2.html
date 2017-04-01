@@ -1,0 +1,37 @@
+<ion-view view-title="Datos">
+	<ion-content class="padding ">
+		<center>
+        	<img  ng-show="imgURI !== undefined" ng-src="{{imgURI}}"  style="height: 100%; width: 37%;">
+		</center>
+		<label>
+		Dirección: {{direccion.route}} {{direccion.numero}}, {{direccion.colonia}}
+		</label>
+
+		<br>
+	  	<div class="list">
+		 		Problema:
+				<select ng-model="data.subcategoria" ng-change="cambio()">
+		    		<option></option>
+				<option  ng-repeat="item in subcategorias | filter: query" value="{{item.id}}" >{{item.subcategoria}}</option>
+		    	</select>
+		 
+		</div>
+
+	  	<div class="list" ng-show="visibilidadDependencia">
+			Dependencia:
+			<select ng-model="data.categoria" disabled="disabled">
+				<option  ng-repeat="item in detalles | filter: query" value="{{item.id}}" >{{item.categoria}}</option>
+		    </select>
+		    <br>
+			<label class="item item-input">
+		    	<textarea  ng-model="data.descripcion" placeholder="Descripción (Opcional)"></textarea>
+		  	</label>
+	  		<br>
+	  		
+		<button class="button"  ng-click="subirReporte()">
+       		ENVIAR!
+        </button>
+		
+		</div>
+	</ion-content>
+</ion-view>

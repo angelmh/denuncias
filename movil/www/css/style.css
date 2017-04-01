@@ -1,0 +1,54 @@
+/* Empty. Add your own CSS if you like */
+.map {
+  height: 60%;
+  width: 100%;
+}
+.scroll {
+  height: 100%;
+}
+.labels {
+  color: black;
+
+  font-family: "Lucida Grande", "Arial", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  width: 80px;
+  white-space: nowrap;
+}
+
+.contenedor
+{
+	width: 90%;
+	margin: 0 auto;
+	padding: 20px;
+}
+.contenedor h2
+{
+	text-align: 
+}
+
+.img_rounded
+{
+	border-radius: 10px !important;
+	overflow: hidden !important;;
+	width: 215px !important;;
+	height: 185px !important;;
+	margin: 0 auto !important;;
+}
+
+.img_rounded img
+{
+	width: 100% !important;
+}
+
+.rotulo
+{
+	color: #666666;
+}
+
+.valor
+{
+	color: #333333;
+	font-size: 1.4em;
+	font-weight: bold;
+}

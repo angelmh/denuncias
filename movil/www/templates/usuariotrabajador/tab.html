@@ -1,0 +1,23 @@
+<ion-tabs class="tabs-icon-top tabs-striped tabs-background-dark tabs-color-stable">
+		
+
+	    <ion-tab  title="Recientes" href="#/usuariotrabajador/recientes">
+	        	<ion-nav-view name="usuariotrabajador.recientes"></ion-nav-view>
+	    </ion-tab>
+
+	    <ion-tab  title="Priorización" href="#/usuariotrabajador/votacion">
+	        	<ion-nav-view name="usuariotrabajador.votacion"></ion-nav-view>
+	    </ion-tab>
+
+	    <ion-tab title="Mis datos" href="#/usuariotrabajador/datos">
+	        	<ion-nav-view name="usuariotrabajador.datos"></ion-nav-view>
+	    </ion-tab>
+	    
+	    <ion-tab  title="Cerrar" ng-controller="CerrarController"  ng-click="close()">
+	    </ion-tab>
+	    
+	    <ion-tab hidden="true" href="#/usuariotrabajador/reporte">
+	        	<ion-nav-view name="usuariotrabajador.reporte"></ion-nav-view>
+	    </ion-tab>
+	    
+</ion-tabs>

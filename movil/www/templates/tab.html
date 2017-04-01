@@ -1,0 +1,31 @@
+
+	<ion-tabs class="tabs-icon-top tabs-striped tabs-background-dark tabs-color-stable">
+			<ion-tab hidden="true">
+	        	<ion-nav-view name="tab-home"></ion-nav-view>
+	    	</ion-tab>
+
+	        <ion-tab icon="ion-eye" title="Denunciar" href="#/tab/denunciar">
+	        	<ion-nav-view name="tab-denunciar"></ion-nav-view>
+	    	</ion-tab>
+
+	    	 <ion-tab  hidden="true" title="Denunciar" href="#/tab/denunciar2">
+	        	<ion-nav-view name="tab-denunciar2"></ion-nav-view>
+	    	</ion-tab>
+
+	        <ion-tab icon="ion-ios-people" title="Apoyar" href="#/tab/comunidad">
+	        	<ion-nav-view name="tab-comunidad"></ion-nav-view>
+	    	</ion-tab>
+
+	        <ion-tab icon="ion-person" title="Mis datos" href="#/tab/datos">
+	        	<ion-nav-view name="tab-datos"></ion-nav-view>
+	    	</ion-tab>
+
+
+	    	<ion-tab icon="ion-close-circled"  title="Cerrar" ng-controller="CerrarController"  ng-click="close()">
+	    		
+	    	</ion-tab>
+
+	    	<ion-tab hidden="true" href="#/tab/reporte">
+	        	<ion-nav-view name="tab-reporte"></ion-nav-view>
+	    	</ion-tab>
+	</ion-tabs>

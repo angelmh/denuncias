@@ -1,0 +1,31 @@
+<ion-view view-title="Datos">
+	<ion-content class="padding ">
+		<center>
+        	<img  ng-show="imgURI !== undefined" ng-src="{{imgURI}}"  style="height: 100%; width: 37%;">
+		</center>
+		<label>
+		Direccion: {{direccion.route}} {{direccion.numero}}, {{direccion.colonia}}
+		</label>
+
+	
+		<label class="item item-input">
+	    	<textarea  ng-model="data.descripcion" placeholder="Descripción"></textarea>
+	  	</label>
+	  	
+	  	
+	  	<div class="list">
+			<label class="item item-input item-select">
+		    	<div class="input-label">
+		    	Categoria
+		    	</div>
+		    	<select ng-model="data.categoria">
+				<option  ng-repeat="item in detalles | filter: query" value="{{item.id}}" >{{item.categoria}}</option>
+		    	</select>
+		  	</label>
+		</div>
+
+		<button class="button"  ng-click="subirReporte()">
+       		ENVIAR!
+        </button>
+	</ion-content>
+</ion-view>

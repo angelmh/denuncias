@@ -1,0 +1,19 @@
+<ion-view view-title="Datos del reporte">
+	<ion-content class="padding">
+		<div class="contenedor">
+			<div class="img_rounded"><img src="{{detalles.src}}"></div>
+			<p class="rotulo">Gente apoyando: <span class="valor">{{ data.total }}</span> </p>
+			<button class="button button-small" ng-show="visibilidadApoyo" ng-click="apoyar()">Apoyar</button>
+			<button class="button button-small" ng-show="visibilidadCancelar" ng-click="cancelar()">Cancelar</button>
+			<p class="rotulo">Reportado por: <span class="valor">{{detalles.name}}</span> </p>
+			<p class="rotulo">Estatus: <span class="valor">{{detalles.estatus}}</span> </p>
+
+			<p class="rotulo">Categoria: <span class="valor">{{detalles.categoria}}</span> </p>
+			
+			<p class="rotulo">Descripcion: <span class="valor">{{detalles.descripcion}}</span> </p>
+			<p class="rotulo">Direccion: <span class="valor">{{detalles.calle_avenida}} {{detalles.numero}}, {{detalles.colonia}}</span> </p>
+			<p class="rotulo">Estatus: <span class="valor">{{detalles.estatus}}</span> </p>
+			<p class="rotulo">Fecha: <span class="valor">{{detalles.fecha}}</span> </p>
+		</div>
+	</ion-content>
+</ion-view>

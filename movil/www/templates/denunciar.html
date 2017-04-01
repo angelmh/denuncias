@@ -1,0 +1,57 @@
+<ion-view view-title="Datos">
+	<ion-content class="padding ">
+		
+		<ion-header-bar class="bar-stable">
+	      
+
+	        <label ng-bind-html="htmldireccion">{{ direccion }}</label>
+      	</ion-header-bar>
+
+	      
+	    <ion-content scroll="false">
+	        <div id="map" class="map" data-tap-disabled="true"></div><br>
+        	<center>
+        		
+        	<form name="myForm">
+	        	<label ng-show="visibilidadnumero" class="item item-input">
+				    <input type="text"  ng-model="data.numero" ng-show="visibilidadnumero" placeholder="Numero" ng-keyup="validarInputNumero()" required>
+				</label>
+
+				<label ng-show="visibilidadcolonia" class="item item-input">
+				    <input type="text" ng-model="data.colonia" ng-show="visibilidadcolonia" placeholder="Colonia" ng-keyup="validarInputColonia()" required>
+				</label>
+			</form>
+				
+	        	<img  ng-show="imgURI !== undefined" ng-src="{{imgURI}}"  style="height: 100%; width: 20%;">
+			</center>
+	    </ion-content>
+	            
+     
+      	<ion-footer-bar class="bar-stable" ng-show="visibilidadstep1">
+
+		   <button class="button ion-camera" ng-click="takePicture()"> Tomar Foto  </button>
+
+		   
+        	
+			
+
+        	<a  ng-show="visibilidadstep2" class="button icon-right ion-chevron-right" href="#/tab/denunciar2"></a>
+
+			<!--
+			<button class="button"  ng-click="choosePhoto()">
+        	Choose Photo
+        	</button>
+		   <button class="button" ng-controller="homeCtrl"  ng-click="uploadPhoto()" >Upload </button>
+			
+			<button class="button" ng-click="takePicture()">Take Picture from camera</button>
+		   <h1 class="title">Title!</h1>-->
+	
+		</ion-footer-bar>
+	
+
+
+        
+     </ion-content>
+
+	</ion-content>
+</ion-view>
